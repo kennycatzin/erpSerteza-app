@@ -9,16 +9,7 @@ import { RegistroComponent } from './login/registro.component';
 
 
 const APP_ROUTES: Routes = [
-    { 
-        path: '', 
-        component: CuentasxpagarComponent,
-        children:[
-            { path: 'proveedores', component:  ProveedoresComponent},
-            { path: 'usuarios', component: UsuariosComponent },
-            { path: '', redirectTo: '/proveedores', pathMatch: 'full'},
 
-        ]
-    },
     { path: 'login', component: LoginComponent },
     { path: 'registro', component: RegistroComponent },
     { path: '**', component: NopagefoundComponent },
