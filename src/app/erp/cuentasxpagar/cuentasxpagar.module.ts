@@ -1,11 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CuentasxpagarComponent } from './cuentasxpagar.component';
-
+import {FormsModule} from '@angular/forms';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { ProveedoresComponent } from './proveedores/proveedores.component';
 import { sharedModule } from '../../shared/shared.module';
 import { CUENTAS_ROUTES } from './cuentasxpagar.routes';
+import { ProgressComponent } from './progress/progress.component';
 
 
 
@@ -16,11 +17,14 @@ import { CUENTAS_ROUTES } from './cuentasxpagar.routes';
     UsuariosComponent,
     ProveedoresComponent,
     CuentasxpagarComponent,
+    ProgressComponent,
 
   ],
   imports: [  
       sharedModule,
-      CUENTAS_ROUTES
+      CUENTAS_ROUTES,
+      FormsModule
+      
    
   ],
   exports: [
