@@ -15,6 +15,7 @@ import { LoginComponent } from './login/login.component';
 
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 import { RegistroComponent } from './login/registro.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -25,12 +26,14 @@ import { RegistroComponent } from './login/registro.component';
     AppComponent,    
     LoginComponent,   
     NopagefoundComponent,
-    RegistroComponent
+    RegistroComponent,
+    
   ],
   imports: [
     BrowserModule,
     app_routing,
-    cuentasxpagarModule
+    cuentasxpagarModule,
+    FormsModule
     
    
   ],

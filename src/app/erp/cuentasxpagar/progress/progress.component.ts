@@ -6,19 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class ProgressComponent implements OnInit {
-  pct = 50;
-  constructor() { }
+  pct1 = 30;
+  pct2=20;
+  constructor() { 
+    
+  }
 
   ngOnInit() {
-  }
 
-  accion(variable){
-    if(this.pct<=100 || this.pct>0){
-      this.pct = this.pct + variable;
-    }
-    else {
-      console.log('no se puede');
-    }
   }
-
+  actual( event:number ){
+    console.log('Evento:', event);
+  }
+ 
 }
