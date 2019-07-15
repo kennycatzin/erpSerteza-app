@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+declare function mi_init();
 @Component({
   selector: 'app-cuentasxpagar',
   templateUrl: './cuentasxpagar.component.html',
@@ -10,6 +10,7 @@ export class CuentasxpagarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    mi_init();
   }
 
 }
