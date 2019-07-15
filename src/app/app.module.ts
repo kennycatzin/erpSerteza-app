@@ -11,12 +11,12 @@ import { cuentasxpagarModule } from './erp/cuentasxpagar/cuentasxpagar.module';
 
 import { LoginComponent } from './login/login.component';
 
-
+//servicios
+import {ServiceModule} from './services/service.module';
 
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 import { RegistroComponent } from './login/registro.component';
 import { FormsModule } from '@angular/forms';
-import { SettingsService } from './services/settings.service';
 
 
 
@@ -34,11 +34,12 @@ import { SettingsService } from './services/settings.service';
     BrowserModule,
     app_routing,
     cuentasxpagarModule,
-    FormsModule
+    FormsModule,
+    ServiceModule
     
    
   ],
-  providers: [SettingsService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
