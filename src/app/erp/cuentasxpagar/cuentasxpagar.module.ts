@@ -8,6 +8,7 @@ import { sharedModule } from '../../shared/shared.module';
 import { CUENTAS_ROUTES } from './cuentasxpagar.routes';
 import { ProgressComponent } from './progress/progress.component';
 import { IncrementadorComponent } from '../../components/incrementador/incrementador.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 
 
@@ -19,7 +20,8 @@ import { IncrementadorComponent } from '../../components/incrementador/increment
     ProveedoresComponent,
     CuentasxpagarComponent,
     ProgressComponent,
-    IncrementadorComponent
+    IncrementadorComponent,
+    AccountSettingsComponent
 
 
   ],
