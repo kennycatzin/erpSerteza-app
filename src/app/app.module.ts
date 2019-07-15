@@ -16,6 +16,7 @@ import { LoginComponent } from './login/login.component';
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 import { RegistroComponent } from './login/registro.component';
 import { FormsModule } from '@angular/forms';
+import { SettingsService } from './services/settings.service';
 
 
 
@@ -37,7 +38,7 @@ import { FormsModule } from '@angular/forms';
     
    
   ],
-  providers: [],
+  providers: [SettingsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
